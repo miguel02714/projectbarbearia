@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Barbearia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                  url('HOME\ \(2\).png') no-repeat center center;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 40px;
+      gap: 30px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .grid-cortes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .corte {
+      text-align: center;
+    }
+
+    .corte img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .corte button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: 2px solid white;
+      background-color: transparent;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .corte button:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#">ENDEREÇOS</a>
+    <a href="#">RESERVA</a>
+    <a href="#">CORTES</a>
+    <a href="#">CONTATO</a>
+  </header>
+
+  <div class="grid-cortes">
+    <div class="corte">
+      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 1">
+      <button>FAZER RESERVA</button>
+    </div>
+    <div class="corte">
+      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 2">
+      <button>FAZER RESERVA</button>
+    </div>
+    <div class="corte">
+      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 3">
+      <button>FAZER RESERVA</button>
+    </div>
+    <div class="corte">
+      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 4">
+      <button>FAZER RESERVA</button>
+    </div>
+    <div class="corte">
+      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 5">
+      <button>FAZER RESERVA</button>
+    </div>
+    <div class="corte">
+      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 6">
+      <button>FAZER RESERVA</button>
+    </div>
+  </div>
+
+</body>
+</html>
