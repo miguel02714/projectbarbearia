@@ -8,8 +8,9 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('Captura\ de\ tela_23-4-2025_231358_www.canva.com.jpeg') no-repeat center center;
+      background: url('HOME.jpg') no-repeat center center;
       background-size: cover;
+      background-attachment: fixed;
       color: #f0dbc0;
       height: 100vh;
       box-sizing: border-box;
@@ -18,8 +19,10 @@
     .navbar {
       display: flex;
       justify-content: flex-end;
+      align-items: center;
+      flex-wrap: wrap;
       padding: 30px 80px;
-      background-color: transparent;
+      gap: 40px;
     }
 
     .navbar a {
@@ -27,7 +30,6 @@
       color: #e8e8e8;
       font-size: 22px;
       font-weight: bold;
-      margin-left: 40px;
       transition: color 0.3s ease;
     }
 
@@ -42,6 +44,7 @@
       padding: 60px 100px;
       height: calc(100vh - 100px);
       justify-content: center;
+      text-align: right;
     }
 
     .titulo {
@@ -50,7 +53,6 @@
       color: #f0dbc0;
       margin-bottom: 60px;
       line-height: 1.1;
-      text-align: right;
     }
 
     .info {
@@ -58,20 +60,49 @@
       margin: 20px 0;
       display: flex;
       align-items: center;
-      text-align: right;
+      justify-content: flex-end;
     }
 
-    .info i, .info span {
-      margin-right: 15px;
+    .info span {
+      margin-left: 10px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .navbar {
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .navbar a {
+        font-size: 18px;
+      }
+
+      .container {
+        padding: 40px 30px;
+        align-items: center;
+        text-align: center;
+      }
+
+      .titulo {
+        font-size: 50px;
+        margin-bottom: 40px;
+      }
+
+      .info {
+        font-size: 24px;
+        justify-content: center;
+      }
     }
   </style>
 </head>
 <body>
   <div class="navbar">
-    <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/">HOME</a></a>
-        <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/preco">RESERVA</a></a>
-        <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/cortes">CORTES</a></a>
-        <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/contato">CONTATO</a></a>
+    <a href="https://miguel02714.github.io/projectbarbearia/">HOME</a>
+    <a href="https://miguel02714.github.io/projectbarbearia/preco">RESERVA</a>
+    <a href="https://miguel02714.github.io/projectbarbearia/cortes">CORTES</a>
+    <a href="https://miguel02714.github.io/projectbarbearia/contato">CONTATO</a>
   </div>
 
   <div class="container">

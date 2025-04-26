@@ -1,96 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url('Captura\ de\ tela_23-4-2025_215628_www.canva.com\ \(1\).jpeg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            color: white;
-        }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url('Captura%20de%20tela_23-4-2025_215628_www.canva.com%20(1).jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: white;
+    }
 
-        header {
-            display: flex;
-            justify-content: flex-end;
-            padding: 20px 40px;
-            gap: 30px;
-        }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 40px;
+      gap: 30px;
+    }
 
-        header a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-        }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
 
-        .conteudo {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: center;
-            height: 80vh;
-            padding-right: 80px;
-        }
+    header a:hover {
+      color: #ccc;
+    }
 
-        .titulo-principal {
-            font-size: 48px;
-            font-weight: bold;
-            text-align: right;
-            max-width: 600px;
-        }
+    .conteudo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      height: 80vh;
+      padding-right: 80px;
+      text-align: right;
+    }
 
-        .subtexto {
-            margin-top: 20px;
-            font-size: 18px;
-            text-align: right;
-            max-width: 450px;
-        }
+    .titulo-principal {
+      font-size: 48px;
+      font-weight: bold;
+      max-width: 600px;
+      line-height: 1.2;
+    }
 
-        .botao {
-            margin-top: 30px;
-            padding: 12px 28px;
-            border: 2px solid white;
-            background-color: transparent;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: background 0.3s;
-        }
+    .subtexto {
+      margin-top: 20px;
+      font-size: 18px;
+      max-width: 450px;
+      opacity: 0.9;
+    }
 
-        .botao:hover {
-            background-color: white;
-            color: black;
-        }
-    </style>
+    .botao {
+      margin-top: 30px;
+      padding: 12px 28px;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    .botao:hover {
+      background: white;
+      color: black;
+    }
+
+    /* Responsivo para tablets e celulares */
+    @media (max-width: 768px) {
+      body {
+        background-image: url('Captura%20de%20tela_25-4-2025_194524_www.canva.com.jpeg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      header {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .conteudo {
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      .titulo-principal {
+        font-size: 36px;
+      }
+
+      .subtexto {
+        font-size: 16px;
+      }
+
+      .botao {
+        padding: 10px 24px;
+        font-size: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/">HOME</a></a>
-        <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/preco">RESERVA</a></a>
-        <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/cortes">CORTES</a></a>
-        <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/contato">CONTATO</a></a>
-    </header>
+  <header>
+    <a href="https://miguel02714.github.io/projectbarbearia/">HOME</a>
+    <a href="https://miguel02714.github.io/projectbarbearia/preco">RESERVA</a>
+    <a href="https://miguel02714.github.io/projectbarbearia/cortes">CORTES</a>
+    <a href="https://miguel02714.github.io/projectbarbearia/contato">CONTATO</a>
+  </header>
 
-    <div class="conteudo">
-        <h1 class="titulo-principal">MELHORES CORTES<br>COM ESTILO E PRECISÃO</h1>
-        <p class="subtexto">MARQUE UM HORÁRIO E VENHA NOS CONHECER, CLIQUE EM SAIBA MAIS</p>
-        <button class="botao">SAIBA MAIS</button>
-    </div>
+  <div class="conteudo">
+    <h1 class="titulo-principal">MELHORES CORTES<br>COM ESTILO E PRECISÃO</h1>
+    <p class="subtexto">MARQUE UM HORÁRIO E VENHA NOS CONHECER, CLIQUE EM SAIBA MAIS</p>
+    <button class="botao">SAIBA MAIS</button>
+  </div>
 
 </body>
 </html>

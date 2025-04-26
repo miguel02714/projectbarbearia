@@ -13,17 +13,23 @@
     body {
       font-family: Arial, sans-serif;
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                  url('HOME\ \(2\).png') no-repeat center center;
+                  url('imagens/HOME (2).png') no-repeat center center;
       background-size: cover;
       color: white;
       min-height: 100vh;
     }
 
     header {
+      width: 100%;
       display: flex;
-      justify-content: flex-end;
-      padding: 20px 40px;
-      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      gap: 40px;
       font-weight: bold;
       font-size: 18px;
     }
@@ -31,28 +37,44 @@
     header a {
       color: white;
       text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    header a:hover {
+      color: #ffd700;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
     }
 
     .grid-cortes {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 40px;
-      max-width: 1000px;
-      margin: 50px auto;
-      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1200px;
     }
 
     .corte {
       text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(5px);
     }
 
     .corte img {
       width: 100%;
+      height: auto;
       border-radius: 8px;
     }
 
     .corte button {
-      margin-top: 10px;
+      margin-top: 15px;
       padding: 10px 20px;
       border: 2px solid white;
       background-color: transparent;
@@ -67,43 +89,57 @@
       background-color: white;
       color: black;
     }
+
+    @media (max-width: 600px) {
+      header {
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 16px;
+      }
+
+      .grid-cortes {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/">HOME</a></a>
-        <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/preco">RESERVA</a></a>
-        <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/cortes">CORTES</a></a>
-        <a href="#"><a href="https://miguel02714.github.io/projectbarbearia/contato">CONTATO</a></a>
+    <a href="https://miguel02714.github.io/projectbarbearia/">HOME</a>
+    <a href="https://miguel02714.github.io/projectbarbearia/preco">RESERVA</a>
+    <a href="https://miguel02714.github.io/projectbarbearia/cortes">CORTES</a>
+    <a href="https://miguel02714.github.io/projectbarbearia/contato">CONTATO</a>
   </header>
 
-  <div class="grid-cortes">
-    <div class="corte">
-      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 1">
-      <button>FAZER RESERVA</button>
+  <main>
+    <div class="grid-cortes">
+      <div class="corte">
+        <img src="imagens/Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 1">
+        <button>FAZER RESERVA</button>
+      </div>
+      <div class="corte">
+        <img src="imagens/Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 2">
+        <button>FAZER RESERVA</button>
+      </div>
+      <div class="corte">
+        <img src="imagens/Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 3">
+        <button>FAZER RESERVA</button>
+      </div>
+      <div class="corte">
+        <img src="imagens/Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 4">
+        <button>FAZER RESERVA</button>
+      </div>
+      <div class="corte">
+        <img src="imagens/Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 5">
+        <button>FAZER RESERVA</button>
+      </div>
+      <div class="corte">
+        <img src="imagens/Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 6">
+        <button>FAZER RESERVA</button>
+      </div>
     </div>
-    <div class="corte">
-      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 2">
-      <button>FAZER RESERVA</button>
-    </div>
-    <div class="corte">
-      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 3">
-      <button>FAZER RESERVA</button>
-    </div>
-    <div class="corte">
-      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 4">
-      <button>FAZER RESERVA</button>
-    </div>
-    <div class="corte">
-      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 5">
-      <button>FAZER RESERVA</button>
-    </div>
-    <div class="corte">
-      <img src="Captura de tela_23-4-2025_23525_www.canva.com.jpeg" alt="Corte 6">
-      <button>FAZER RESERVA</button>
-    </div>
-  </div>
+  </main>
 
 </body>
 </html>
